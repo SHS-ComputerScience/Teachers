@@ -1,0 +1,13 @@
+// Linear Search Algorithm (Pseudocode)
+
+FUNCTION linearSearch(array, value)
+
+	FOR i in range(array.length)
+		IF array[i] == value THEN
+			return i // return index if found
+		ENDIF
+	NEXT i
+
+	return -1 // return -1 if not found
+
+ENDFUNCTION

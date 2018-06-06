@@ -1,0 +1,26 @@
+// Binary Tree Search Algorithm (Pseudocode)
+
+FUNCTION binaryTreeSearch(itemSought, currentNode)
+
+	IF currentNode == None THEN
+		return False
+	ELSE
+		IF itemSought == item at currentNode THEN
+			return True
+		ELSE
+			IF itemSought < item at currentNode THEN
+				IF left child exists THEN
+					return binaryTreeSearch(itemSought, left child)
+				ELSE
+					return False
+				ENDIF
+				IF right child exists THEN
+					return binaryTreeSearch(itemSought, right child)
+				ELSE
+					return False
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
+
+ENDFUNCTION

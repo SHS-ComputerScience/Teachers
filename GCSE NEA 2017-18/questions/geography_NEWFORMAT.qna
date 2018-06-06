@@ -1,0 +1,35 @@
+{	'question'          : 'What is the captial of Australia?',
+	'correct_answer'    : 'Canberra',
+	'incorrect_answers' : [ 'Sydney',
+									'Melbourne',
+									'Perth'
+								 ]
+}
+{	'question'          : 'Which is the smallest continent in the world?',
+	'correct_answer'    : 'Australia',
+	'incorrect_answers' : [ 'Greenland',
+									'Antarctica',
+									'Europe'
+								 ]
+}
+{	'question'          : 'Which three countries share their borders with Cambodia?',
+	'correct_answer'    : 'Laos, Thailand and Vietnam',
+	'incorrect_answers' : [ 'China, Myanmar and Thailand',
+									'China, Laos and Myanmar',
+									'Laos, Myanmar and Vietnam'
+								 ]
+}
+{	'question'          : 'Which is the largest sea in the world?',
+	'correct_answer'    : 'The Philippine Sea',
+	'incorrect_answers' : [ 'The South China Sea',
+									'The Arabian Sea',
+									'The Coral Sea'
+								 ]
+}
+{	'question'          : 'Which is the highest country in the world?',
+	'correct_answer'    : 'Bhutan',
+	'incorrect_answers' : [ 'Lesotho',
+									'Nepal',
+									'Chile'
+								 ]
+}

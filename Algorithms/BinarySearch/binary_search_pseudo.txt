@@ -1,0 +1,23 @@
+// Binary Search Algorithm (Pseudocode)
+
+FUNCTION binarySearch(sortedArray, value)
+
+	low = 0
+    high = sortedArray.length - 1
+
+	WHILE low <= high
+        mid = (low + high) DIV 2
+
+		IF sortedArray[mid] > value THEN
+            high = mid - 1
+        ELSEIF sortedArray[mid] < value THEN
+            low = mid + 1
+        ELSE
+            return mid // value found
+        ENDIF
+
+	ENDWHILE
+
+	return -1 // value not found
+
+ENDFUNCTION

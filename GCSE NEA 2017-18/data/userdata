@@ -1,0 +1,3 @@
+{'username': 'admin', 'password': 'admin', 'name': 'Admin', 'age': '', 'year': ''}
+{'username': 'tes16', 'password': 'password', 'name': 'Test User', 'age': '16', 'year': '11'}
+{'password': 'yamma', 'year': '11', 'username': 'bar15', 'age': '15', 'name': 'Barney'}

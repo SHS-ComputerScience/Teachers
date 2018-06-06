@@ -1,0 +1,23 @@
+// Quick Sort Algorithm (Pseudocode)
+
+FUNCTION quickSort(array)
+	IF array.length <= 1 THEN
+		RETURN array
+	ELSE
+		less = []
+		more = []
+		pivot = getRandomItem(array)
+
+		FOR item in array
+			IF item < pivot THEN
+				less.append(item)
+			ELSEIF item > pivot THEN
+				more.append(item)
+			ENDIF
+		NEXT item
+
+		less = quickSort(less)
+		more = quickSort(more)
+		RETURN less + [pivot] * array.count(pivot) + more
+	ENDIF
+ENDFUNCTION
