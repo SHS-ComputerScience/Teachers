@@ -1,0 +1,62 @@
+//----------------------------------------------------------
+// Recursive Function Example:
+//----------------------------------------------------------
+
+	FUNCTION reverseStrRecursive(string)
+		string = str(string) // ensure string is a string
+		IF string = '' THEN
+			RETURN string
+		ELSE
+			RETURN reverseStrRecursive(
+				string.subString(1, string.length)) +
+				string.subString(0, 1))
+	END FUNCTION
+
+//----------------------------------------------------------
+// Recursion Exercise 1:
+//   Write a function to calculate the sum of a list of
+//   numbers.
+//----------------------------------------------------------
+
+	FUNCTION listSum(nList)
+		// your pseudocode here
+	END FUNCTION
+
+//----------------------------------------------------------
+// Recursion Exercise 2:
+//   Write a function to get the factorial of a non-negative
+//   integer.
+//----------------------------------------------------------
+
+	FUNCTION factorial(n)
+		// your pseudocode here
+	END FUNCTION
+
+//----------------------------------------------------------
+// Recursion Exercise 3:
+//   Write a function to solve the Fibonacci sequence.
+//----------------------------------------------------------
+
+	FUNCTION fibonacci(n)
+		// your pseudocode here
+	END FUNCTION
+
+//----------------------------------------------------------
+// Recursion Exercise 4:
+//   Write a function to calculate the sum of an
+//   n-dimensional list of numbers.
+//----------------------------------------------------------
+
+	FUNCTION nDimensionalListSum(nList)
+		// your pseudocode here
+	END FUNCTION
+
+//----------------------------------------------------------
+// Recursion Exercise 5:
+//   Write a function to converting an Integer to a string
+//   in any base.
+//----------------------------------------------------------
+
+	FUNCTION intToString(n, base)
+		// your pseudocode here
+	END FUNCTION
