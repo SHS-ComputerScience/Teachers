@@ -1,4 +1,3 @@
-import time
 import random
 
 
@@ -17,21 +16,31 @@ class Player():
         """ Constructor """
         self.name = name
 
-    def attack(self, player):
+    def attack(self, target):
         """ Player attack method """
         amount = random.randint(self.MIN_STRENGTH, self.MAX_STRENGTH)
-        print(self.name, 'attacks', player.name, 'for', amount, 'hp!')
-        player.defend(amount)
+        print(self.name, 'attacks', target.name, 'for', amount, 'hp!')
+        target.defend(amount)
 
     def defend(self, amount):
         """ Player defend method """
         self.hp -= amount
         if self.hp > 0:
-            print(self.name, 'has', self.hp, 'hp remaining!')
+            print(self.name, 'has', self.hp, 'hp remaining!\n')
         else:
-            print(self.name, 'is dead!')
+            print(self.name, 'is dead!\n')
             self.is_dead = True
-        print()
+
+
+class Assassin(Player):
+    """ Assassin player class """
+    MIN_STRENGTH = 100
+    MAX_STRENGTH = 100
+
+
+class Tank(Player):
+    """ Tank player class """
+    hp = 200
 
 
 # Functions -----------------
@@ -49,8 +58,8 @@ players = [Player('Alfie'),
            Player('Arun'),
            Player('Charlie'),
            Player('Connor'),
-           Player('Fola'),
-           Player('Max'),
+           Assassin('Fola'),
+           Tank('Max'),
            Player('Sadie'),
            Player('Tom')]
 
@@ -66,6 +75,5 @@ while all_players_alive:
         if target.is_dead:
             all_players_alive = False
             break
-        time.sleep(1)
 
 print('Game Over!')
