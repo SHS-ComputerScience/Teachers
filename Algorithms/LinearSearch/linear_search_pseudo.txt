@@ -2,12 +2,12 @@
 
 FUNCTION linearSearch(array, value)
 
-	FOR i in range(array.length)
+	FOR i=0 TO array.length
 		IF array[i] == value THEN
-			return i // return index if found
+			return True		// value found
 		ENDIF
 	NEXT i
 
-	return -1 // return -1 if not found
+	return False			// value not found
 
 ENDFUNCTION

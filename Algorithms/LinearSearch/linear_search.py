@@ -4,6 +4,6 @@ def linear_search(array, value):
 
 	for i in range(len(array)):
 		if array[i] == value:
-			return i
+			return True		# value found
 
-	return -1
+	return False			# value not found

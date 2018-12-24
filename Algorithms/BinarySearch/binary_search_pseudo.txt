@@ -13,11 +13,11 @@ FUNCTION binarySearch(sortedArray, value)
         ELSEIF sortedArray[mid] < value THEN
             low = mid + 1
         ELSE
-            return mid // value found
+            return True     // value found
         ENDIF
 
 	ENDWHILE
 
-	return -1 // value not found
+	return False            // value not found
 
 ENDFUNCTION

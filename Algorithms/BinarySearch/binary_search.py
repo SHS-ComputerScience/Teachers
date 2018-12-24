@@ -2,17 +2,19 @@
 
 def binary_search(sortedArray, value):
 
-    low = 0
-    high = len(sortedArray) - 1
+	low = 0
+	high = len(sortedArray) - 1
 
 	while low <= high:
-        mid = (low + high) // 2
+		mid = (low + high) // 2
 
 		if sortedArray[mid] > value:
 			high = mid - 1
-        elif sortedArray[mid] < value:
+		elif sortedArray[mid] < value:
 			low = mid + 1
-        else:
-			return mid
+		else:
+			return True		# value found
 
-	return -1
+	return False			# value not
+
+binary_search('abcefghijklmnopqrstuvwxyz', 'p')
