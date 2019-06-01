@@ -1,0 +1,20 @@
+// Insertion Sort Algorithm (Pseudocode)
+
+FUNCTION insertionSort(array)
+
+	FOR i=1 TO array.length
+		value = array[i]
+		j = i - 1
+
+		WHILE j >= 0 AND array[j] > value
+			array[j + 1] = array[j]
+			j = j - 1
+		ENDWHILE
+
+		array[j + 1] = value
+
+	NEXT i
+
+	RETURN array
+
+ENDFUNCTION

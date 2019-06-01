@@ -16,5 +16,3 @@ def binary_search(sortedArray, value):
 			return True		# value found
 
 	return False			# value not
-
-binary_search('abcefghijklmnopqrstuvwxyz', 'p')

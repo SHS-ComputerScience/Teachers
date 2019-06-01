@@ -1,0 +1,40 @@
+// Merge Sort Algorithm (Pseudocode)
+
+FUNCTION mergeSort(array)
+
+    IF array.length > 1 THEN
+        mid = array.length DIV 2
+        leftHalf = array[: mid]
+        rightHalf = array[mid :]
+
+        mergeSort(leftHalf)
+        mergeSort(rightHalf)
+
+        i = 0
+        j = 0
+        k = 0
+
+        WHILE i < leftHalf.length AND j < rightHalf.length
+            IF leftHalf[i] < rightHalf[i] THEN
+                array[k] = leftHalf[i]
+                i = i + 1
+            ELSE:
+                array[k] = rightHalf[j]
+                j = j + 1
+            ENDIF
+            k = k + 1
+        ENDWHILE
+
+        WHILE i < leftHalf.length
+            array[k] = leftHalf[i]
+            i = i + 1
+            k = k + 1
+        ENDWHILE
+
+        WHILE j < rightHalf.length
+            array[k] = rightHalf[j]
+            j = j + 1
+            k = k + 1
+        ENDWHILE
+    ENDIF
+ENDFUNCTION

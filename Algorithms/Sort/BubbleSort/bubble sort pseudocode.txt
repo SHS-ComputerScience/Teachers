@@ -1,0 +1,19 @@
+// Bubble Sort Algorithm (Pseudocode)
+
+FUNCTION bubbleSort(array)
+
+	numberOfPasses = array.length - 1
+
+	FOR i=0 to numberOfPasses
+		FOR j=0 to numberOfPasses - i
+
+			IF array[j] > array[j + 1] THEN
+				array[j], array[j + 1] = array[j + 1], array[j]  // swap values
+			ENDIF
+
+		NEXT j
+	NEXT i
+
+	RETURN array
+
+ENDFUNCTION

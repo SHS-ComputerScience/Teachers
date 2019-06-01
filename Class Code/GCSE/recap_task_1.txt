@@ -1,0 +1,10 @@
+Programming Techniques
+Recap Task 1
+
+1. Ask the user to enter their name and assign it to a variable
+2. Display “Hello, <user’s name>”
+3. Ask the user to enter their age and assign it to a variable
+4. Use this age to calculate the year in which the user was born
+5. Display “You were born in <year>”
+6. Determine whether or not this was a leap year and display either “You were born in a leap year” or “You were not born in a leap year”
+7. Ask the user if they want to enter a new name and age, and repeat if so or quit if not. 

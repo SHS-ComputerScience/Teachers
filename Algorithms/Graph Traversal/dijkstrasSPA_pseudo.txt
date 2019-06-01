@@ -1,0 +1,15 @@
+Mark the start node as a distance of 0 from itself and
+all other nodes as an infinite distance from the start
+node.
+WHILE the destination node is unvisited
+    Go to the closest unvisited node to A (initially this
+    will be A itself) and call this the current node.
+    FOR every unvisited node connected to the current node:
+        Calculate the distance to the current plus the
+        distance of the edge to unvisited
+        If this distance is less than the currently
+        recorded shortest distance, make it the new
+        shortest distance.
+    NEXT connected node
+    Mark the current node as visited.
+ENDWHILE

@@ -1,0 +1,34 @@
+GRAPH = {
+    "A": ["B","D","E"],
+    "B": ["A","C","D"],
+    "C": ["B","G"],
+    "D": ["A","B","E","F"],
+    "E": ["A","D"],
+    "F": ["D"],
+    "G": ["C"]
+}
+
+FUNCTION bfs(graph, currentVertex)
+
+    queue = []      // an empty queue
+    visited = []    // an empty list of visited nodes
+    
+    enqueue currentVertex
+    
+    WHILE queue not empty
+        dequeue item and put in currentVertex
+        append currentVertex to visited
+        for each neighbour of currentVertex
+            IF neighbour not in visited AND
+               neighbour not in queue THEN
+                enqueue neighbour
+            ENDIF
+        NEXT neighbour
+    ENDWHILE
+    RETURN visited
+
+ENDFUNCTION
+
+// main program
+traversal = bfs(GRAPH, "A")
+print ('Nodes visited in this order:', traversal)
